@@ -1,36 +1,36 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { fetchUsers } from '../redux/user/userActions'
+import React from 'react';
+import { connect } from 'react-redux';
+import { fetchUsers } from '../redux/user/userActions';
 
 class UserContainer extends React.Component {
+	componentDidMount() {
+		this.props.fetchUsers();
+	}
 
-    componentDidMount() {
-        this.props.fetchUsers()
-    }
-    
-
-    render () {
-        return this.props.userData.loading ? <h2>Loading</h2> : this.props.userData.error ? <h2>{this.props.userData.error}</h2> : <div>
-            <h2>User List</h2>
-            <div>
-                {this.props.userData.users.map(user => <p>{user.name}</p>)}
-            </div>
-        </div>
-    }
+	render() {
+		return this.props.userData.loading ? (
+			<h2>Loading</h2>
+		) : this.props.userData.error ? (
+			<h2>{this.props.userData.error}</h2>
+		) : (
+			<div>
+				<h2>User List</h2>
+				<div>{this.props.userData.users.map((user) => <p>{user.name}</p>)}</div>
+			</div>
+		);
+	}
 }
-
 
 const mapStateToProps = (state) => {
-    return {
-        userData: state.user
-    }
-}
+	return {
+		userData: state.user
+	};
+};
 
-const mapDispatchToProps = dispatch => {
-    return {
-        fetchUsers: () => dispatch(fetchUsers())
-    }
-}
+const mapDispatchToProps = (dispatch) => {
+	return {
+		fetchUsers: () => dispatch(fetchUsers())
+	};
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserContainer)
-
+export default connect(mapStateToProps, mapDispatchToProps)(UserContainer);

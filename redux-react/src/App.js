@@ -7,17 +7,17 @@ import NewCakeContainer from './components/NewCakeContainer';
 import UserContainer from './components/UserContainer';
 
 function App() {
-  return (
-    <div className="App">
-    <UserContainer />
-    {/* <ItemContainer cake />
-    <ItemContainer />
-        <CakeContainer />
-        <HooksCakeContainer />
-        <IceCreamContainer />
-        <NewCakeContainer /> */}
-    </div>
-  );
+	return (
+		<div className="App">
+			<ItemContainer cake />
+			<ItemContainer />
+			<CakeContainer />
+			<HooksCakeContainer />
+			<IceCreamContainer />
+			<NewCakeContainer />
+			<UserContainer />
+		</div>
+	);
 }
 
 export default App;
