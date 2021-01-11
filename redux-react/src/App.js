@@ -5,14 +5,15 @@ import IceCreamContainer from './components/IceCreamContainer';
 import ItemContainer from './components/ItemContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import UserContainer from './components/UserContainer';
+import DataFetching from './Hooks/useEffect/DataFetching';
 
 
 
 function App() {
 	return (
 		<div className="App">
-			{/* 
-				Redux Components
+			<DataFetching />
+			{/* Redux Components
 			<ItemContainer cake />
 			<ItemContainer />
 			<CakeContainer />
