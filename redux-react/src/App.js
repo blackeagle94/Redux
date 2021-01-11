@@ -6,11 +6,13 @@ import ItemContainer from './components/ItemContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import UserContainer from './components/UserContainer';
 import ClassCounter from './Hooks/components/ClassCounter';
+import HookCounter from './Hooks/components/HookCounter';
+import HookCounter2 from './Hooks/components/HookCounter2';
 
 function App() {
 	return (
 		<div className="App">
-			<ClassCounter />
+			<HookCounter2 />
 			{/* 
 				Redux Components
 			<ItemContainer cake />
