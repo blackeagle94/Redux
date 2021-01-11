@@ -12,6 +12,7 @@ import HookCounterOne from './Hooks/useEffect/HookCounterOne';
 function App() {
 	return (
 		<div className="App">
+		{/* <ClassCounterOne /> */}
 		<HookCounterOne />
 			{/* 
 				Redux Components
