@@ -7,9 +7,9 @@ import IceCreamContainer from './components/IceCreamContainer';
 import ItemContainer from './components/ItemContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import UserContainer from './components/UserContainer';
-import ComponentA from './Hooks/useReducer with useContext/ComponentA';
-import ComponentB from './Hooks/useReducer with useContext/ComponentB';
-import ComponentC from './Hooks/useReducer with useContext/ComponentC';
+import DataFetchingOne from './Hooks/useReducer/fetching data with useReducer/DataFetchingOne';
+import DataFetchingTwo from './Hooks/useReducer/fetching data with useReducer/DataFetchingTwo';
+
 
 // export const UserContext = React.createContext();
 // export const ChannelContext = React.createContext();
@@ -34,6 +34,7 @@ function App() {
 	/* const [ count, dispatch ] = useReducer(reducer, initialState); */
 	return (
 		<div className="App">
+			<DataFetchingTwo />
 			{/* Count - {count}
 			<CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
 				<ComponentA />
