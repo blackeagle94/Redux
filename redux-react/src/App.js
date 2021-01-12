@@ -7,6 +7,8 @@ import IceCreamContainer from './components/IceCreamContainer';
 import ItemContainer from './components/ItemContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import UserContainer from './components/UserContainer';
+import CounterOne from './Hooks/Costum Hook/CounterOne';
+import CounterTwo from './Hooks/Costum Hook/CounterTeo';
 import DocTitleOne from './Hooks/Costum Hook/DocTitleOne';
 import DocTitleTwo from './Hooks/Costum Hook/DocTitleTwo';
 import ParentComponent from './Hooks/useCallback/ParentComponent';
@@ -41,8 +43,8 @@ function App() {
 	/* const [ count, dispatch ] = useReducer(reducer, initialState); */
 	return (
 		<div className="App">
-			<DocTitleOne />
-			<DocTitleTwo />
+			<CounterOne />
+			<CounterTwo />
 			{/* Count - {count}
 			<CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
 				<ComponentA />
