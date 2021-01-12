@@ -11,6 +11,9 @@ import ParentComponent from './Hooks/useCallback/ParentComponent';
 import Counter from './Hooks/useMemo/Counter';
 import DataFetchingOne from './Hooks/useReducer/fetching data with useReducer/DataFetchingOne';
 import DataFetchingTwo from './Hooks/useReducer/fetching data with useReducer/DataFetchingTwo';
+import ClassTimer from './Hooks/useRef/ClassTimer';
+import FOcusInput from './Hooks/useRef/FocusInput';
+import HookTimer from './Hooks/useRef/HookTimer';
 
 
 // export const UserContext = React.createContext();
@@ -36,7 +39,9 @@ function App() {
 	/* const [ count, dispatch ] = useReducer(reducer, initialState); */
 	return (
 		<div className="App">
-			<Counter />
+		{/* <FOcusInput /> */}
+		<ClassTimer />
+		<HookTimer />
 			{/* Count - {count}
 			<CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
 				<ComponentA />
