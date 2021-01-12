@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 
 import './App.css';
 import CakeContainer from './components/CakeContainer';
@@ -7,18 +7,39 @@ import IceCreamContainer from './components/IceCreamContainer';
 import ItemContainer from './components/ItemContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import UserContainer from './components/UserContainer';
-import ComponentC from './Hooks/context API/ComponentC';
-import DataFetching from './Hooks/useEffect/DataFetching';
-import CounterOne from './Hooks/useReducer/CounterOne';
-import CounterThree from './Hooks/useReducer/CounterThree';
-import CounterTwo from './Hooks/useReducer/CounterTwo';
+import ComponentA from './Hooks/useReducer with useContext/ComponentA';
+import ComponentB from './Hooks/useReducer with useContext/ComponentB';
+import ComponentC from './Hooks/useReducer with useContext/ComponentC';
 
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
+
+/*export const CountContext = React.createContext();
+
+const initialState = 0;
+const reducer = (curentState, action) => {
+	switch (action) {
+		case 'increment':
+			return curentState + 1;
+		case 'decrement':
+			return curentState - 1;
+		case 'reset':
+			return initialState;
+		default:
+			return curentState;
+	}
+}; */
+
 function App() {
+	/* const [ count, dispatch ] = useReducer(reducer, initialState); */
 	return (
 		<div className="App">
-			<CounterThree />
+			{/* Count - {count}
+			<CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
+				<ComponentA />
+				<ComponentB />
+				<ComponentC />
+			</CountContext.Provider> */}
 			{/* <UserContext.Provider value={'ismail'}>
 				<ChannelContext.Provider value={'code'}>
 					<ComponentC />
